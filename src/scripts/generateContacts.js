@@ -4,6 +4,8 @@ import { PATH_DB } from '../constants/contacts.js';
 
 const generateContacts = async (number) => {
 
+    // console.log(PATH_DB);
+
     try {
         const contacts = JSON.parse(await fs.readFile(PATH_DB, 'utf-8'));
         for (let i = 0; i < number; i += 1) {
